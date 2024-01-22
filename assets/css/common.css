@@ -1,0 +1,94 @@
+/* blind */
+.blind{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+}
+
+/* module */
+.module-title{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* swiper control */
+.swiper .pagination{
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  z-index: 1;
+}
+.swiper .pagination [class*='fraction']{
+  position: relative;
+  margin-right: 12px;
+  padding-right: 12px;
+}
+.swiper .pagination [class*='fraction']::after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 1px;
+  height: 24px;
+  background: #fff;
+  opacity: .6;
+  transform: translateY(-50%);
+}
+.swiper .pagination .control-area{
+  display: flex;
+  align-items: center;
+}
+.swiper .pagination [class*='btn-']{
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+.swiper-banner .pagination [class*='btn-']{
+  width: 20px;
+  height: 20px;
+}
+.swiper .pagination .btn-prev{background-position: -241px -285px;}
+.swiper .pagination .btn-play{background-position: -269px -285px;}
+.swiper .pagination .btn-pause{background-position: -285px -285px;}
+.swiper .pagination .btn-next{background-position: -256px -285px;}
+.swiper .pagination .contorl-box{
+  position: relative;
+  width: 18px;
+  height: 18px;
+}
+.swiper-banner .pagination .contorl-box{
+  width: 20px;
+  height: 20px;
+}
+.swiper .pagination .control-box [class*='btn-'].hide{
+  display: none;
+}
+.swiper .pagination .control-box .btn-pause{
+  display: block;
+}
+.swiper .pagination .control-box .btn-play{
+  display: block;
+}
+
+/* sp */
+.swiper .pagination [class*='btn-'],
+.header .group-bottom form .btn-search,
+.footer .group-info .link-center,
+.sc-notice .group-header a .ico-add:before,
+.sc-search form [class*='btn-'],
+.header h1 a{
+  background-image: url('../images/sp-bg.png') !important;
+  background-repeat: no-repeat !important;
+}
+
+.sc-main-news [class*='ico-']{
+  background-image: url('../images/sp-bg2.png') !important;
+  background-repeat: no-repeat !important;
+}
